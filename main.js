@@ -30,4 +30,19 @@ function tocaSomToim(){
     }
     document.querySelector('.tecla_toim').onclick = tocaSomClap;
 
+function tocaSomPsh(){
+    document.querySelector('#som_tecla_psh').play();
+    }
+    document.querySelector('.tecla_psh').onclick = tocaSomClap;
+
+function tocaSomTic(){
+    document.querySelector('#som_tecla_tic').play();
+    }
+    document.querySelector('.tecla_tic').onclick = tocaSomClap;
+
+function tocaSomTom(){
+    document.querySelector('#som_tecla_tom').play();
+    }
+    document.querySelector('.tecla_tom').onclick = tocaSomClap;
+
 document.querySelectorAll('.tecla');

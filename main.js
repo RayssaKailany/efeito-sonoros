@@ -15,4 +15,19 @@ function tocaSomTim(){
     }
     document.querySelector('.tecla_tim').onclick = tocaSomClap;
 
+function tocaSomPuff(){
+    document.querySelector('#som_tecla_puff').play();
+    }
+    document.querySelector('.tecla_puff').onclick = tocaSomClap;
+
+function tocaSomSplash(){
+    document.querySelector('#som_tecla_splash').play();
+    }
+    document.querySelector('.tecla_splash').onclick = tocaSomClap;
+
+function tocaSomToim(){
+    document.querySelector('#som_tecla_toim').play();
+    }
+    document.querySelector('.tecla_toim').onclick = tocaSomClap;
+
 document.querySelectorAll('.tecla');

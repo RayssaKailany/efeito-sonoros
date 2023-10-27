@@ -62,3 +62,9 @@ while(contador < listaDeTeclas.length) {
     console.log(instrumento);
     contador = contador + 1;
     console.log(contador);
+
+const tecla = listaDeTeclas[contador];
+const instrumento = tecla.classList[1];
+console.log(instrumento);
+tecla.onclick = function () {
+tocaSom(‘#som_tecla_splash’);

@@ -3,7 +3,7 @@ function tocaSomPom(idElementoAudio){
     document.querySelector(idElementoAudio).play();
     }
 //chamada ou invocação da função TocaSomPom ao clicar no botão
-    listaDeTeclas[contador].onclick = tocaSom;
+    listaDeTeclas[contador].onclick = tocaSomPom(‘#som_tecla_pom’);
 
 function tocaSomClap(){
     document.querySelector('#som_tecla_clap').play();
@@ -24,6 +24,11 @@ function tocaSomSplash(){
     document.querySelector('#som_tecla_splash').play();
     }
     document.querySelector('.tecla_splash').onclick = tocaSomClap;
+  
+    listaDeTeclas[contador].onclick = function () {
+
+        tocaSom(‘#som_tecla_splash’);
+        };
 
 function tocaSomToim(){
     document.querySelector('#som_tecla_toim').play();

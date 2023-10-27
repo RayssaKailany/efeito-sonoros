@@ -59,3 +59,6 @@ while(contador < listaDeTeclas.length) {
     listaDeTeclas[contador].onclick = tocaSomPom;
     contador = contador + 1;
     }
+    console.log(instrumento);
+    contador = contador + 1;
+    console.log(contador);

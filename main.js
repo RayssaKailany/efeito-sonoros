@@ -1,70 +1,18 @@
-//declaração/criação da função TocaSomPom
-function tocaSomPom(idElementoAudio){
-    document.querySelector(idElementoAudio).play();
-    }
-//chamada ou invocação da função TocaSomPom ao clicar no botão
-    listaDeTeclas[contador].onclick = tocaSomPom(‘#som_tecla_pom’);
+//Declaração/criação da função TocaSom
+function TocaSomPom(){
+    document.querySelector('#som_tecla_pom'). play();
+}
+//chamda ou invocação da função tocaSomPom ao clicar no botão
+document.querySelector('tecla_pom').onclick = TocaSomPom;
 
-function tocaSomClap(){
-    document.querySelector('#som_tecla_clap').play();
-    }
-    document.querySelector('.tecla_clap').onclick = tocaSomClap;
-
-function tocaSomTim(){
-    document.querySelector('#som_tecla_tim').play();
-    }
-    document.querySelector('.tecla_tim').onclick = tocaSomClap;
-
-function tocaSomPuff(){
-    document.querySelector('#som_tecla_puff').play();
-    }
-    document.querySelector('.tecla_puff').onclick = tocaSomClap;
-
-function tocaSomSplash(){
-    document.querySelector('#som_tecla_splash').play();
-    }
-    document.querySelector('.tecla_splash').onclick = tocaSomClap;
-  
-    listaDeTeclas[contador].onclick = function () {
-
-        tocaSom(‘#som_tecla_splash’);
-        };
-
-function tocaSomToim(){
-    document.querySelector('#som_tecla_toim').play();
-    }
-    document.querySelector('.tecla_toim').onclick = tocaSomClap;
-
-function tocaSomPsh(){
-    document.querySelector('#som_tecla_psh').play();
-    }
-    document.querySelector('.tecla_psh').onclick = tocaSomClap;
-
-function tocaSomTic(){
-    document.querySelector('#som_tecla_tic').play();
-    }
-    document.querySelector('.tecla_tic').onclick = tocaSomClap;
-
-function tocaSomTom(){
-    document.querySelector('#som_tecla_tom').play();
-    }
-    document.querySelector('.tecla_tom').onclick = tocaSomClap;
-
-const listaDeTeclas = document.querySelectorAll('.tecla');
-
-listaDeTeclas[0].onclick = tocaSomPom;
 let contador = 0;
-// Estrutura de repetição - Enquanto
-while(contador < listaDeTeclas.length) {
-    listaDeTeclas[contador].onclick = tocaSomPom;
-    contador = contador + 1;
+whitle(contador < istaDeTeclas.length){
+    const teclas = listaDeTeclas[contador]
+    const efeito = teclas.classlist[1];
+    const idAudio = "#som_" + efeito;
+    litaDeTeclas[contador].onclick = function(){
+        tocaSomPom(idAudio);
     }
-    console.log(instrumento);
     contador = contador + 1;
-    console.log(contador);
-
-const tecla = listaDeTeclas[contador];
-const instrumento = tecla.classList[1];
-console.log(instrumento);
-tecla.onclick = function () {
-tocaSom(‘#som_tecla_splash’);
+    console.long(contador);
+}

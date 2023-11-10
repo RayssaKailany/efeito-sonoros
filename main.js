@@ -9,8 +9,8 @@ let contador = 0;
 whitle(contador < istaDeTeclas.length){
     const teclas = listaDeTeclas[contador]
     const efeito = teclas.classlist[1];
-    const idAudio = "#som_" + efeito;
-    litaDeTeclas[contador].onclick = function(){
+    const idAudio = `"#som_" ${efeito}`;
+    teclas.onclick = function(){
         tocaSomPom(idAudio);
     }
     contador = contador + 1;

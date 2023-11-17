@@ -1,5 +1,5 @@
 :root {
-  --cinza: rgb(130, 27, 199), 170, 170);
+  --cinza: rgb(185, 185, 185), 170, 170);
   --vermelha: rgb(200, 4, 240);
   --vermelha-escura: #6c2080;
   --branca: #fff;
@@ -23,7 +23,7 @@ h1 {
 }
 
 .teclado {
-  background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
+  background: linear-gradient(to bottom, #eeeeee 0%,#f2c9ff 100%);
   box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
   border-radius: 30px;
   display: grid;

@@ -13,6 +13,6 @@ for(let contador = 0; contador < istaDeTeclas.length; contador++){
         tocaSom(idAudio);         //chamada da função tocaSom com parâmetro idAudio
     }
     teclas.onkeydown = function(){
-    teclas.classList.add('tecla');
+        teclas.classList.add('ativa');
     }
 }
